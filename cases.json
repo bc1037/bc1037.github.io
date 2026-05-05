@@ -1,0 +1,132 @@
+[
+  {
+    "id": "CASE-001",
+    "category": "Meals & Entertainment",
+    "scenario": "The CEO expensed a $450 dinner at an exclusive steakhouse on a Friday night. \ud83e\udd69",
+    "triageQuestions": [
+      "Was a current or potential client present at the meal?",
+      "Was a specific, substantial business topic discussed during or immediately before/after?",
+      "Do you have an itemized receipt showing exactly what was ordered (not just the credit card signature slip)?"
+    ],
+    "irsRule": "Under IRC Section 274, business meals are generally 50% deductible, provided they are not 'lavish or extravagant', a client is present, and business is discussed. Entertainment is 0% deductible.",
+    "verdictPass": "Passes Pre-Audit (50% Deductible) \u2705",
+    "verdictFail": "Audit Flag! Likely Personal Commingling or Entertainment \ud83d\udea8"
+  },
+  {
+    "id": "CASE-002",
+    "category": "Travel",
+    "scenario": "A 5-day trip to Hawaii. The business owner had one 2-hour meeting on Wednesday. \ud83c\udf34",
+    "triageQuestions": [
+      "Were more than 50% of the total days spent actively doing business?",
+      "Was the primary, initial intent of the trip for business purposes?",
+      "Are the expenses strictly separated between the business days and the personal weekend?"
+    ],
+    "irsRule": "For domestic travel, flight costs are only deductible if the trip is 'primarily' for business (usually meaning more days spent on business than personal). Hotel/meals are only deductible for the specific business days.",
+    "verdictPass": "Passes Pre-Audit (Prorated Deductions Allowed) \u2705",
+    "verdictFail": "Audit Flag! Disguised Personal Vacation \ud83d\udea8"
+  },
+  {
+    "id": "CASE-003",
+    "category": "Vehicles",
+    "scenario": "The company purchased a heavy SUV (G-Wagon) and the owner drives it home every day. \ud83d\ude99",
+    "triageQuestions": [
+      "Is the vehicle used more than 50% of the time for qualified business purposes?",
+      "Is there a contemporaneous mileage log tracking exact business vs. personal miles?",
+      "Is the vehicle over 6,000 lbs (qualifying for Section 179 bonus depreciation)?"
+    ],
+    "irsRule": "Heavy vehicles can qualify for massive Section 179 deductions, but personal commuting miles DO NOT count as business miles. A strict daily mileage log is the #1 thing IRS auditors ask for.",
+    "verdictPass": "Passes Pre-Audit (Section 179 Eligible) \u2705",
+    "verdictFail": "Audit Flag! Commuting is a Personal Expense \ud83d\udea8"
+  },
+  {
+    "id": "CASE-004",
+    "category": "Home Office",
+    "scenario": "The freelancer is deducting 25% of their rent for a 'Home Office' in their living room. \ud83c\udfe0",
+    "triageQuestions": [
+      "Is the space used EXCLUSIVELY for business? (No personal TV watching, no guest bedroom)?",
+      "Is it the principal place of your business?",
+      "Is the square footage calculated accurately against the total square footage of the home?"
+    ],
+    "irsRule": "The 'Exclusive Use' rule is absolute. If you have a desk in your living room where your kids also play video games, it fails the test. It must be a dedicated, identifiable space.",
+    "verdictPass": "Passes Pre-Audit (Rent/Utilities Prorated) \u2705",
+    "verdictFail": "Audit Flag! Failed Exclusive Use Test \ud83d\udea8"
+  },
+  {
+    "id": "CASE-005",
+    "category": "Gifts",
+    "scenario": "Purchased a $150 bottle of rare wine as a holiday gift for a top client. \ud83c\udf77",
+    "triageQuestions": [
+      "Was the gift given directly to a client or customer?",
+      "Is the cost being deducted capped at $25 per person per year?",
+      "Is the company logo prominently displayed on the item? (If yes, different rules apply)."
+    ],
+    "irsRule": "Business gifts are strictly limited to a $25 deduction per person, per year. Any amount over $25 is non-deductible, no matter how important the client is. Incidental costs (engraving, wrapping) don't count toward the $25.",
+    "verdictPass": "Passes Pre-Audit (Capped at $25 Deduction) \u2705",
+    "verdictFail": "Audit Flag! Non-Deductible Excess Gift \ud83d\udea8"
+  },
+  {
+    "id": "CASE-006",
+    "category": "Clothing",
+    "scenario": "Bought two custom Armani suits to 'look professional' for upcoming court appearances. \ud83d\udc54",
+    "triageQuestions": [
+      "Is the clothing strictly required as a condition of employment?",
+      "Is the clothing NOT suitable for everyday, ordinary wear?",
+      "Is there a company logo permanently affixed to the clothing?"
+    ],
+    "irsRule": "No matter how much your job requires you to look good, everyday clothing (suits, dresses) is NEVER deductible. It must be protective gear or a specific uniform not suitable for street wear.",
+    "verdictPass": "Passes Pre-Audit (Qualified Uniform) \u2705",
+    "verdictFail": "Audit Flag! Personal Wardrobe Expense \ud83d\udea8"
+  },
+  {
+    "id": "CASE-007",
+    "category": "Entertainment",
+    "scenario": "Took 4 clients to a luxury suite at an NFL game to build relationships. \ud83c\udfc8",
+    "triageQuestions": [
+      "Was this event purchased after the Tax Cuts and Jobs Act of 2017?",
+      "Are you trying to deduct the cost of the tickets?",
+      "Was food/drink purchased separately from the ticket cost?"
+    ],
+    "irsRule": "Following the TCJA of 2017, entertainment expenses (sports games, golf, theater) are 0% deductible. However, if food/beverage is invoiced separately from the entertainment, the food might be 50% deductible.",
+    "verdictPass": "Passes Pre-Audit (Only separately billed food is 50% deductible) \u2705",
+    "verdictFail": "Audit Flag! Entertainment is Non-Deductible \ud83d\udea8"
+  },
+  {
+    "id": "CASE-008",
+    "category": "Education",
+    "scenario": "Paid $15,000 for an MBA program to pivot into a completely new career field. \ud83c\udf93",
+    "triageQuestions": [
+      "Does the education maintain or improve skills required in your CURRENT trade or business?",
+      "Is the education required by law/employer to keep your current salary or status?",
+      "Does this education NOT qualify you for a completely new trade or business?"
+    ],
+    "irsRule": "You can deduct education that improves your current skills (like a CPA taking a tax update course). You CANNOT deduct education that qualifies you for a new career (like a bookkeeper going to law school).",
+    "verdictPass": "Passes Pre-Audit (Qualified CPE/Training) \u2705",
+    "verdictFail": "Audit Flag! Qualifies for a New Career \ud83d\udea8"
+  },
+  {
+    "id": "CASE-009",
+    "category": "Office Supplies",
+    "scenario": "Bought an $8,000 top-of-the-line gaming PC, expensed as 'Office Equipment'. \ud83d\udcbb",
+    "triageQuestions": [
+      "Is this equipment used strictly for business operations?",
+      "Is the expense reasonable and ordinary for your specific type of business?",
+      "Do you have a policy in place preventing personal gaming/use on company equipment?"
+    ],
+    "irsRule": "Equipment must be 'ordinary and necessary'. While a tech company might need high-end PCs, an $8k gaming rig for a local bakery might trigger an audit as a disguised personal asset.",
+    "verdictPass": "Passes Pre-Audit (Valid Asset Capitalization) \u2705",
+    "verdictFail": "Audit Flag! Lavish or Disguised Personal Asset \ud83d\udea8"
+  },
+  {
+    "id": "CASE-010",
+    "category": "Health & Wellness",
+    "scenario": "Expensing a monthly country club and gym membership as 'Networking and Wellness'. \ud83c\udfcb\ufe0f\u200d\u2642\ufe0f",
+    "triageQuestions": [
+      "Is this a medical expense explicitly prescribed by a doctor for a specific disease?",
+      "Is this a fringe benefit offered equally to ALL employees, not just the CEO?",
+      "Are you deducting the dues for a club organized for business, pleasure, or recreation?"
+    ],
+    "irsRule": "Club dues (country clubs, athletic clubs, airline clubs) are strictly non-deductible. Gym memberships are usually personal unless provided as a broad employee fringe benefit or strictly prescribed for a medical condition.",
+    "verdictPass": "Passes Pre-Audit (Qualified Fringe Benefit) \u2705",
+    "verdictFail": "Audit Flag! Non-Deductible Club Dues \ud83d\udea8"
+  }
+]

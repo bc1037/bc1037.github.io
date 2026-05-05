@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forensic Pre-Audit Triage</title>
+    <link rel="stylesheet" href="style-app.css">
+</head>
+<body>
+    <div class="dashboard">
+        <div class="stat-box">🕵️‍♂️ Rank: <span id="rank-display">Junior Investigator</span></div>
+        <div class="stat-box">📂 Cases Cleared: <span id="cases-display">0</span></div>
+        <div class="stat-box">🚨 Flags Caught: <span id="flags-display">0</span></div>
+    </div>
+
+    <div class="triage-container">
+        <div class="case-header">
+            <span id="case-id" class="badge">CASE-000</span>
+            <span id="category-title" class="badge category">Loading Category...</span>
+        </div>
+        
+        <div id="scenario-box">
+            <h2 id="scenario-text">Awaiting next file... 📁</h2>
+        </div>
+
+        <div id="triage-instructions">
+            <p><strong>Auditor Instructions:</strong> Review the expense. To pass this expense as a valid deduction, you must verify the following criteria. Check all that apply.</p>
+        </div>
+
+        <div id="questions-container">
+            <!-- The 3 Triage checkboxes will be injected here via JS -->
+        </div>
+
+        <button id="submit-btn" onclick="submitVerdict()">Issue Verdict ⚖️</button>
+
+        <div id="feedback-box" class="hidden">
+            <h3 id="verdict-title"></h3>
+            <p id="irs-rule-text"></p>
+            <button id="next-btn" onclick="loadNextCase()">Next Case File ➡️</button>
+        </div>
+    </div>
+
+    <!-- Celebration Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
