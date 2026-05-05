@@ -128,4 +128,136 @@
         /* --- Skills Bar --- */
         .skills-bar { background: var(--navy); padding: 50px 10%; text-align: center; color: white; }
         .pill { display: inline-block; padding: 8px 20px; background: rgba(255,255,255,0.1); color: white; border: 1px solid var(--gold); border-radius: 50px; margin: 5px; font-size: 0.8rem; }
-        .pill.gold { background: var(--gold); color: var(--navy); font-weight: 600; border: none
+        .pill.gold { background: var(--gold); color: var(--navy); font-weight: 600; border: none; }
+
+        footer { background: #00152e; color: white; padding: 40px 10%; text-align: center; }
+        footer a { color: var(--gold); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; padding: 40px 5%; }
+            .btn-group { justify-content: center; }
+            .profile-frame { margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Britney Cruz Martinez | <span>Aspiring CPA</span></div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="app.html" class="nav-resume">Launch App</a></li>
+            <li><a href="https://www.linkedin.com/in/britneycruz" target="_blank">LinkedIn</a></li>
+            <li><a href="assets/Resume.pdf" class="nav-resume" target="_blank">Resume PDF</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="about">
+        <div class="profile-container">
+            <div class="profile-frame">
+                <img src="assets/ProfilePic.jpg" alt="Britney Cruz Martinez">
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Hi, I'm Britney.</h1>
+            <h2>ACCOUNTING STUDENT @ RUTGERS BUSINESS SCHOOL</h2>
+            <p>Bilingual accounting student with hands-on experience in tax compliance and legal administration. Dedicated to the intersection of tax strategy and analytical precision.</p>
+            
+            <div class="app-highlight-box">
+                <h3>Forensic Audit Interactive</h3>
+                <p>I developed a Pre-Audit Triage tool to simulate the identification of IRS audit risks in corporate expenses. Check it out to see my technical skills in action.</p>
+                <div class="btn-group">
+                    <a href="app.html" class="hero-btn">Launch Forensic App 🔍</a>
+                    <a href="assets/Resume.pdf" class="hero-btn outline" target="_blank">View Resume PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <h2 class="section-header">Professional Experience</h2>
+
+        <div class="job-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Tax Intern</div>
+                    <div class="company">PKF O’Connor Davies</div>
+                </div>
+                <div class="date">Feb 2026 – Apr 2026</div>
+            </div>
+            <ul>
+                <li>Supported preparation of individual and business tax returns, ensuring federal and state compliance.</li>
+                <li>Organized, scanned, and reviewed tax documents for 500+ clients.</li>
+                <li>Collaborated with tax professionals to analyze financial data and reconcile bank statements.</li>
+            </ul>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Legal Receptionist (Bilingual)</div>
+                    <div class="company">The Allongo Law Firm, LLC</div>
+                </div>
+                <div class="date">Dec 2024 – Present</div>
+            </div>
+            <ul>
+                <li>Provide administrative support in a high-volume bilingual setting for a team of 20+ paralegals.</li>
+                <li>Manage monthly legal packets for 100+ clients with 100% accuracy and strict deadlines.</li>
+            </ul>
+        </div>
+
+        <div class="job-card">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Sales Associate & Seasonal Key Holder</div>
+                    <div class="company">Bath & Body Works</div>
+                </div>
+                <div class="date">Oct 2023 – Present</div>
+            </div>
+            <ul>
+                <li>Promoted to Key Holder to lead opening and closing procedures, securing store assets and balancing cash tills exceeding $1,500.</li>
+                <li>Boosted customer satisfaction through exceptional service and mentored 12+ seasonal employees.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="leadership" id="leadership">
+        <h2 class="section-header">Leadership & Involvement</h2>
+        <div class="lead-grid">
+            <div class="lead-card">
+                <span class="tag-rutgers">Rutgers University</span>
+                <h4>PRSI Scholar</h4>
+                <p>Selected for the Paul Robeson Success Institute, a high-impact program focusing on professional networking and community building.</p>
+            </div>
+            <div class="lead-card">
+                <span class="tag-rutgers">Rutgers University</span>
+                <h4>Project Ignite | Marketing Team</h4>
+                <p>Contributing to marketing strategy for a community-based initiative dedicated to providing resources and aid to the homelessness population in New Brunswick.</p>
+            </div>
+            <div class="lead-card">
+                <span class="tag-rutgers">Middlesex College</span>
+                <h4>Tri-Alpha | Programming Chair</h4>
+                <p>Led programming for the First-Generation Student Honor Society, managing induction ceremonies and member engagement events.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-bar">
+        <h3 style="margin-bottom: 20px; color: var(--gold);">Accounting Coursework</h3>
+        <span class="pill">Financial Accounting</span>
+        <span class="pill">Managerial Accounting</span>
+        <span class="pill">Intermediate Accounting I</span>
+        <span class="pill">Cost Accounting</span>
+        <span class="pill">Accounting Information Systems</span>
+    </section>
+
+    <footer>
+        <p>Britney Cruz Martinez | <a href="mailto:bc1037@scarletmail.rutgers.edu">bc1037@scarletmail.rutgers.edu</a></p>
+        <div style="margin-top: 15px; font-size: 0.8rem;">
+            <a href="https://www.linkedin.com/in/britneycruz" target="_blank">LinkedIn Profile</a> | North Brunswick, NJ
+        </div>
+    </footer>
+
+</body>
+</html>
