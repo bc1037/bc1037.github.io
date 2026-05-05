@@ -41,8 +41,6 @@
         /* --- Hero Section --- */
         .hero { padding: 80px 10%; display: flex; align-items: center; gap: 50px; min-height: 80vh; background: white; flex-wrap: wrap; }
         
-        .profile-container { position: relative; }
-        
         .profile-frame {
             width: 240px;
             height: 340px;
@@ -121,5 +119,13 @@
 
         /* --- Leadership Grid --- */
         .leadership { padding: 80px 10%; background: #f9f9f9; }
-        .lead-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:
-            
+        .lead-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .lead-card { background: white; padding: 25px; border: 1px solid #eee; border-top: 3px solid var(--gold); }
+        .lead-card h4 { color: var(--navy); margin-bottom: 10px; font-family: 'Playfair Display', serif; }
+        .lead-card p { font-size: 0.85rem; color: #666; }
+        .tag-rutgers { color: #cc0033; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; display: block; margin-bottom: 5px; }
+
+        /* --- Skills Bar --- */
+        .skills-bar { background: var(--navy); padding: 50px 10%; text-align: center; color: white; }
+        .pill { display: inline-block; padding: 8px 20px; background: rgba(255,255,255,0.1); color: white; border: 1px solid var(--gold); border-radius: 50px; margin: 5px; font-size: 0.8rem; }
+        .pill.gold { background: var(--gold); color: var(--navy); font-weight: 600; border: none
